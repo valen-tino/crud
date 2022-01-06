@@ -32,7 +32,7 @@ class AuthorController extends Controller
     {
         $author=Author::find($id);
         $author->judulartikel=$request->judulartikel;
-        $author->artikel=$request->alamat;
+        $author->artikel=$request->artikel;
         $author->save();
 
         return " Artikel Berhasil Diupdate ";
